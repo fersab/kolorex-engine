@@ -24,6 +24,7 @@ General Todo:
   * Texture Mapping for all object loads
   * Deffered Rendering
   * Volumetric Scattering
+  * Particle Engine
   * Screen Space Ambient Occlusion (SSAO)
   * Full Scene Anti Aliasing (FSAA)
   * HDR pipeline
