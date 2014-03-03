@@ -25,8 +25,8 @@ int main(int argc, const char * argv[])
     
     RenderEngine* renderEngine = new RenderEngine();
     
-    Shader* vertexShader = new Shader("/Users/feridsabanovic/projects/private/ogl-test/shaders/BasicShader.vertex", GL_VERTEX_SHADER);
-    Shader* fragmentShader = new Shader("/Users/feridsabanovic/projects/private/ogl-test/shaders/BasicShader.fragment", GL_FRAGMENT_SHADER);
+    Shader* vertexShader = new Shader("/Users/feridsabanovic/projects/private/kolorex-engine/shaders/BasicShader.vertex", GL_VERTEX_SHADER);
+    Shader* fragmentShader = new Shader("/Users/feridsabanovic/projects/private/kolorex-engine/shaders/BasicShader.fragment", GL_FRAGMENT_SHADER);
     
     ShaderProgram* shaderProgram = new ShaderProgram();
     shaderProgram->attachShader(vertexShader);

@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E4DEBD318B41520004DBB6D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E4DEBD218B41520004DBB6D /* main.cpp */; };
 		4E4DEBDC18B4152D004DBB6D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4DEBDB18B4152D004DBB6D /* OpenGL.framework */; };
 		4E4DEBE018B41636004DBB6D /* libglfw.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4DEBDF18B41636004DBB6D /* libglfw.3.1.dylib */; };
-		4E4DEBE318B42F1F004DBB6D /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E4DEBE118B42F1F004DBB6D /* Window.cpp */; };
-		4E7A5F8118B5696400154889 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A5F7F18B5696400154889 /* Shader.cpp */; };
-		4E7A5F8418B575B000154889 /* ShaderProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A5F8218B575B000154889 /* ShaderProgram.cpp */; };
 		4E7A5F9218B5828200154889 /* BasicShader.fragment in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A5F9018B5828200154889 /* BasicShader.fragment */; };
 		4E7A5F9318B5828200154889 /* BasicShader.vertex in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A5F9118B5828200154889 /* BasicShader.vertex */; };
-		4E7A5F9618B5984B00154889 /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A5F9418B5984B00154889 /* Mesh.cpp */; };
-		4E7A5F9918B5AAB500154889 /* RenderEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A5F9718B5AAB500154889 /* RenderEngine.cpp */; };
-		4EDEFFD518C0FEDE002003DA /* MeshObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EDEFFD318C0FEDE002003DA /* MeshObject.cpp */; };
+		4ED2F9C218C531CE00746705 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2F9B518C531CE00746705 /* main.cpp */; };
+		4ED2F9C318C531CE00746705 /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2F9B618C531CE00746705 /* Mesh.cpp */; };
+		4ED2F9C418C531CE00746705 /* MeshObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2F9B818C531CE00746705 /* MeshObject.cpp */; };
+		4ED2F9C518C531CE00746705 /* RenderEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2F9BA18C531CE00746705 /* RenderEngine.cpp */; };
+		4ED2F9C618C531CE00746705 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2F9BC18C531CE00746705 /* Shader.cpp */; };
+		4ED2F9C718C531CE00746705 /* ShaderProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2F9BE18C531CE00746705 /* ShaderProgram.cpp */; };
+		4ED2F9C818C531CE00746705 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2F9C018C531CE00746705 /* Window.cpp */; };
 		4EEE647118B99A280070847D /* libassimp.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EEE647018B99A280070847D /* libassimp.3.0.0.dylib */; };
 /* End PBXBuildFile section */
 
@@ -34,25 +34,25 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4E4DEBCF18B41520004DBB6D /* ogl-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ogl-test"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E4DEBD218B41520004DBB6D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "/Users/feridsabanovic/projects/private/ogl-test/src/main.cpp"; sourceTree = "<absolute>"; };
+		4E4DEBCF18B41520004DBB6D /* kolorex-engine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "kolorex-engine"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E4DEBDB18B4152D004DBB6D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		4E4DEBDD18B41531004DBB6D /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		4E4DEBDF18B41636004DBB6D /* libglfw.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.1.dylib; path = ../../../../../opt/local/lib/libglfw.3.1.dylib; sourceTree = "<group>"; };
-		4E4DEBE118B42F1F004DBB6D /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Window.cpp; path = "/Users/feridsabanovic/projects/private/ogl-test/src/Window.cpp"; sourceTree = "<absolute>"; };
-		4E4DEBE218B42F1F004DBB6D /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Window.h; path = "/Users/feridsabanovic/projects/private/ogl-test/src/Window.h"; sourceTree = "<absolute>"; };
-		4E7A5F7F18B5696400154889 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Shader.cpp; path = "/Users/feridsabanovic/projects/private/ogl-test/src/Shader.cpp"; sourceTree = "<absolute>"; };
-		4E7A5F8018B5696400154889 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shader.h; path = "/Users/feridsabanovic/projects/private/ogl-test/src/Shader.h"; sourceTree = "<absolute>"; };
-		4E7A5F8218B575B000154889 /* ShaderProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ShaderProgram.cpp; path = "/Users/feridsabanovic/projects/private/ogl-test/src/ShaderProgram.cpp"; sourceTree = "<absolute>"; };
-		4E7A5F8318B575B000154889 /* ShaderProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShaderProgram.h; path = "/Users/feridsabanovic/projects/private/ogl-test/src/ShaderProgram.h"; sourceTree = "<absolute>"; };
 		4E7A5F9018B5828200154889 /* BasicShader.fragment */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = BasicShader.fragment; sourceTree = "<group>"; };
 		4E7A5F9118B5828200154889 /* BasicShader.vertex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = BasicShader.vertex; sourceTree = "<group>"; };
-		4E7A5F9418B5984B00154889 /* Mesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mesh.cpp; sourceTree = "<group>"; };
-		4E7A5F9518B5984B00154889 /* Mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
-		4E7A5F9718B5AAB500154889 /* RenderEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderEngine.cpp; sourceTree = "<group>"; };
-		4E7A5F9818B5AAB500154889 /* RenderEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderEngine.h; sourceTree = "<group>"; };
-		4EDEFFD318C0FEDE002003DA /* MeshObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MeshObject.cpp; sourceTree = "<group>"; };
-		4EDEFFD418C0FEDE002003DA /* MeshObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeshObject.h; sourceTree = "<group>"; };
+		4ED2F9B518C531CE00746705 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = "<group>"; };
+		4ED2F9B618C531CE00746705 /* Mesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Mesh.cpp; path = src/Mesh.cpp; sourceTree = "<group>"; };
+		4ED2F9B718C531CE00746705 /* Mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mesh.h; path = src/Mesh.h; sourceTree = "<group>"; };
+		4ED2F9B818C531CE00746705 /* MeshObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MeshObject.cpp; path = src/MeshObject.cpp; sourceTree = "<group>"; };
+		4ED2F9B918C531CE00746705 /* MeshObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeshObject.h; path = src/MeshObject.h; sourceTree = "<group>"; };
+		4ED2F9BA18C531CE00746705 /* RenderEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderEngine.cpp; path = src/RenderEngine.cpp; sourceTree = "<group>"; };
+		4ED2F9BB18C531CE00746705 /* RenderEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderEngine.h; path = src/RenderEngine.h; sourceTree = "<group>"; };
+		4ED2F9BC18C531CE00746705 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Shader.cpp; path = src/Shader.cpp; sourceTree = "<group>"; };
+		4ED2F9BD18C531CE00746705 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shader.h; path = src/Shader.h; sourceTree = "<group>"; };
+		4ED2F9BE18C531CE00746705 /* ShaderProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ShaderProgram.cpp; path = src/ShaderProgram.cpp; sourceTree = "<group>"; };
+		4ED2F9BF18C531CE00746705 /* ShaderProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShaderProgram.h; path = src/ShaderProgram.h; sourceTree = "<group>"; };
+		4ED2F9C018C531CE00746705 /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Window.cpp; path = src/Window.cpp; sourceTree = "<group>"; };
+		4ED2F9C118C531CE00746705 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Window.h; path = src/Window.h; sourceTree = "<group>"; };
 		4EEE647018B99A280070847D /* libassimp.3.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.3.0.0.dylib; path = ../../../../../opt/local/lib/libassimp.3.0.0.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,9 +73,9 @@
 		4E4DEBC618B41520004DBB6D = {
 			isa = PBXGroup;
 			children = (
+				4ED2F9B418C531A900746705 /* src */,
 				4EEE647018B99A280070847D /* libassimp.3.0.0.dylib */,
 				4E7A5F8F18B5828200154889 /* shaders */,
-				4E7A5F8618B5803C00154889 /* src */,
 				4E4DEBDF18B41636004DBB6D /* libglfw.3.1.dylib */,
 				4E4DEBDD18B41531004DBB6D /* GLUT.framework */,
 				4E4DEBDB18B4152D004DBB6D /* OpenGL.framework */,
@@ -86,31 +86,10 @@
 		4E4DEBD018B41520004DBB6D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4E4DEBCF18B41520004DBB6D /* ogl-test */,
+				4E4DEBCF18B41520004DBB6D /* kolorex-engine */,
 			);
 			name = Products;
 			sourceTree = "<group>";
-		};
-		4E7A5F8618B5803C00154889 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				4E4DEBD218B41520004DBB6D /* main.cpp */,
-				4E7A5F7F18B5696400154889 /* Shader.cpp */,
-				4E7A5F8018B5696400154889 /* Shader.h */,
-				4E7A5F8218B575B000154889 /* ShaderProgram.cpp */,
-				4E7A5F8318B575B000154889 /* ShaderProgram.h */,
-				4E4DEBE118B42F1F004DBB6D /* Window.cpp */,
-				4E4DEBE218B42F1F004DBB6D /* Window.h */,
-				4E7A5F9418B5984B00154889 /* Mesh.cpp */,
-				4E7A5F9518B5984B00154889 /* Mesh.h */,
-				4E7A5F9718B5AAB500154889 /* RenderEngine.cpp */,
-				4E7A5F9818B5AAB500154889 /* RenderEngine.h */,
-				4EDEFFD318C0FEDE002003DA /* MeshObject.cpp */,
-				4EDEFFD418C0FEDE002003DA /* MeshObject.h */,
-			);
-			name = src;
-			path = "/Users/feridsabanovic/projects/private/ogl-test/src";
-			sourceTree = "<absolute>";
 		};
 		4E7A5F8F18B5828200154889 /* shaders */ = {
 			isa = PBXGroup;
@@ -121,12 +100,32 @@
 			path = shaders;
 			sourceTree = "<group>";
 		};
+		4ED2F9B418C531A900746705 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4ED2F9B518C531CE00746705 /* main.cpp */,
+				4ED2F9B618C531CE00746705 /* Mesh.cpp */,
+				4ED2F9B718C531CE00746705 /* Mesh.h */,
+				4ED2F9B818C531CE00746705 /* MeshObject.cpp */,
+				4ED2F9B918C531CE00746705 /* MeshObject.h */,
+				4ED2F9BA18C531CE00746705 /* RenderEngine.cpp */,
+				4ED2F9BB18C531CE00746705 /* RenderEngine.h */,
+				4ED2F9BC18C531CE00746705 /* Shader.cpp */,
+				4ED2F9BD18C531CE00746705 /* Shader.h */,
+				4ED2F9BE18C531CE00746705 /* ShaderProgram.cpp */,
+				4ED2F9BF18C531CE00746705 /* ShaderProgram.h */,
+				4ED2F9C018C531CE00746705 /* Window.cpp */,
+				4ED2F9C118C531CE00746705 /* Window.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4E4DEBCE18B41520004DBB6D /* ogl-test */ = {
+		4E4DEBCE18B41520004DBB6D /* kolorex-engine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4E4DEBD818B41520004DBB6D /* Build configuration list for PBXNativeTarget "ogl-test" */;
+			buildConfigurationList = 4E4DEBD818B41520004DBB6D /* Build configuration list for PBXNativeTarget "kolorex-engine" */;
 			buildPhases = (
 				4E4DEBCB18B41520004DBB6D /* Sources */,
 				4E4DEBCC18B41520004DBB6D /* Frameworks */,
@@ -136,9 +135,9 @@
 			);
 			dependencies = (
 			);
-			name = "ogl-test";
+			name = "kolorex-engine";
 			productName = "ogl-test";
-			productReference = 4E4DEBCF18B41520004DBB6D /* ogl-test */;
+			productReference = 4E4DEBCF18B41520004DBB6D /* kolorex-engine */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -150,7 +149,7 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Ferid Sabanovic";
 			};
-			buildConfigurationList = 4E4DEBCA18B41520004DBB6D /* Build configuration list for PBXProject "ogl-test" */;
+			buildConfigurationList = 4E4DEBCA18B41520004DBB6D /* Build configuration list for PBXProject "kolorex-engine" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -162,7 +161,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4E4DEBCE18B41520004DBB6D /* ogl-test */,
+				4E4DEBCE18B41520004DBB6D /* kolorex-engine */,
 			);
 		};
 /* End PBXProject section */
@@ -172,15 +171,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E4DEBD318B41520004DBB6D /* main.cpp in Sources */,
-				4EDEFFD518C0FEDE002003DA /* MeshObject.cpp in Sources */,
-				4E4DEBE318B42F1F004DBB6D /* Window.cpp in Sources */,
+				4ED2F9C818C531CE00746705 /* Window.cpp in Sources */,
 				4E7A5F9218B5828200154889 /* BasicShader.fragment in Sources */,
-				4E7A5F9618B5984B00154889 /* Mesh.cpp in Sources */,
+				4ED2F9C618C531CE00746705 /* Shader.cpp in Sources */,
+				4ED2F9C518C531CE00746705 /* RenderEngine.cpp in Sources */,
+				4ED2F9C718C531CE00746705 /* ShaderProgram.cpp in Sources */,
 				4E7A5F9318B5828200154889 /* BasicShader.vertex in Sources */,
-				4E7A5F8418B575B000154889 /* ShaderProgram.cpp in Sources */,
-				4E7A5F8118B5696400154889 /* Shader.cpp in Sources */,
-				4E7A5F9918B5AAB500154889 /* RenderEngine.cpp in Sources */,
+				4ED2F9C418C531CE00746705 /* MeshObject.cpp in Sources */,
+				4ED2F9C218C531CE00746705 /* main.cpp in Sources */,
+				4ED2F9C318C531CE00746705 /* Mesh.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +266,7 @@
 					"$(inherited)",
 					/opt/local/lib,
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "kolorex-engine";
 			};
 			name = Debug;
 		};
@@ -283,14 +282,14 @@
 					"$(inherited)",
 					/opt/local/lib,
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "kolorex-engine";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4E4DEBCA18B41520004DBB6D /* Build configuration list for PBXProject "ogl-test" */ = {
+		4E4DEBCA18B41520004DBB6D /* Build configuration list for PBXProject "kolorex-engine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4E4DEBD618B41520004DBB6D /* Debug */,
@@ -299,7 +298,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4E4DEBD818B41520004DBB6D /* Build configuration list for PBXNativeTarget "ogl-test" */ = {
+		4E4DEBD818B41520004DBB6D /* Build configuration list for PBXNativeTarget "kolorex-engine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4E4DEBD918B41520004DBB6D /* Debug */,

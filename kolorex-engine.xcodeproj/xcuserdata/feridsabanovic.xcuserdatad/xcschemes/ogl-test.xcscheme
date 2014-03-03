@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4E4DEBCE18B41520004DBB6D"
-               BuildableName = "ogl-test"
-               BlueprintName = "ogl-test"
-               ReferencedContainer = "container:ogl-test.xcodeproj">
+               BuildableName = "kolorex-engine"
+               BlueprintName = "kolorex-engine"
+               ReferencedContainer = "container:kolorex-engine.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4E4DEBCE18B41520004DBB6D"
-            BuildableName = "ogl-test"
-            BlueprintName = "ogl-test"
-            ReferencedContainer = "container:ogl-test.xcodeproj">
+            BuildableName = "kolorex-engine"
+            BlueprintName = "kolorex-engine"
+            ReferencedContainer = "container:kolorex-engine.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4E4DEBCE18B41520004DBB6D"
-            BuildableName = "ogl-test"
-            BlueprintName = "ogl-test"
-            ReferencedContainer = "container:ogl-test.xcodeproj">
+            BuildableName = "kolorex-engine"
+            BlueprintName = "kolorex-engine"
+            ReferencedContainer = "container:kolorex-engine.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4E4DEBCE18B41520004DBB6D"
-            BuildableName = "ogl-test"
-            BlueprintName = "ogl-test"
-            ReferencedContainer = "container:ogl-test.xcodeproj">
+            BuildableName = "kolorex-engine"
+            BlueprintName = "kolorex-engine"
+            ReferencedContainer = "container:kolorex-engine.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
