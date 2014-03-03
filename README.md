@@ -1,7 +1,7 @@
 kolorex-engine
 ==============
 
-Opengl 3.2+ 3D Rendering Engine
+The Kolorex Engine - Opengl 3.2+ 3D Rendering Engine
 
 Works currently only on mac.
 
@@ -11,6 +11,7 @@ Lib deps:
   * glfw
   * Glut
   * OpenGL
+
 
 Currenty shader support:
   * Faked ambiant light, white
