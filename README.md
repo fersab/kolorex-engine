@@ -23,10 +23,10 @@ General Todo:
   * Texture Mapping for all object loads
   * Deffered Rendering
   * Volumetric Scattering
-  * Screen-Space-Ambient-Occlusion
+  * Screen Space Ambient Occlusion (SSAO)
+  * Full Scene Anti Aliasing (FSAA)
   * HDR pipeline
   * Filmic tonemapping
-  * Ambient Light approximation using a hemispherical ambient term (+ ssao contribution)
   * (Disc Shaped) Depth of Field
   * Punctual light sources using a microfacet BRDF (supports only directional light "yet")
   * Color Correction (artist definable using gradient texture)
