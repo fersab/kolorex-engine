@@ -37,4 +37,5 @@ General TODO:
   * Shadow Mapping, dynamic shadows
   * Liquid-engine, voxel driven using marching cubes + physics
   * FPS counter
+  * Scene Graph, node based or something
   
