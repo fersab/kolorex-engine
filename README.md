@@ -14,7 +14,7 @@ Lib deps:
 
 
 Current shaders:
-  * Faked ambiant light, white
+  * Faked ambient light, white
   * Diffuse
   * Specular
   
