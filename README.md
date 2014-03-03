@@ -28,6 +28,7 @@ General Todo:
   * HDR pipeline
   * Filmic tonemapping
   * (Disc Shaped) Depth of Field
-  * Punctual light sources using a microfacet BRDF (supports only directional light "yet")
+  * Punctual light sources using a microfacet BRDF
   * Color Correction (artist definable using gradient texture)
+  * Enviromental Mapping 
   
