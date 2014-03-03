@@ -13,7 +13,7 @@ Lib deps:
   * OpenGL
 
 
-Currenty shader support:
+Current shaders:
   * Faked ambiant light, white
   * Diffuse
   * Specular
