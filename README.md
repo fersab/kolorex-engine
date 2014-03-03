@@ -36,4 +36,5 @@ General TODO:
   * Enviromental Mapping 
   * Shadow Mapping, dynamic shadows
   * Liquid-engine, voxel driven using marching cubes + physics
+  * FPS counter
   
