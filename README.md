@@ -41,4 +41,5 @@ General TODO:
   * FPS counter
   * Scene Graph, node based or something
   * Destruction
+  * Animations
   
