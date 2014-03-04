@@ -40,4 +40,5 @@ General TODO:
   * Liquid-engine, voxel driven using marching cubes + physics
   * FPS counter
   * Scene Graph, node based or something
+  * Destruction
   
