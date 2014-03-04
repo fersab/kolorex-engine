@@ -26,6 +26,8 @@ General TODO:
   * Volumetric Scattering
   * Integrate BULLET for physics
   * Particle Engine
+  * Normal Mapping
+  * Parallax Mapping
   * Screen Space Ambient Occlusion (SSAO)
   * Full Scene Anti Aliasing (FSAA)
   * HDR pipeline
