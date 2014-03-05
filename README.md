@@ -33,7 +33,7 @@ General TODO:
   * HDR pipeline
   * Filmic tonemapping
   * (Disc Shaped) Depth of Field
-  * Punctual light sources using a microfacet BRDF
+  * Light sources using a microfacet BRDF, use Cook-Torrance for Geometry and Blinn Phong for Distrubution 
   * Color Correction (artist definable using gradient texture)
   * Enviromental Mapping 
   * Shadow Mapping, dynamic shadows
