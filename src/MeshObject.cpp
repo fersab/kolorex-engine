@@ -21,16 +21,36 @@ ShaderProgram* MeshObject::getCurrentShaderProgram() {
     return this->shaderProgram;
 }
 
-void MeshObject::loadObject(std::string path) {
+void MeshObject::loadObject(std::string objectPath) {
     
     Assimp::Importer importer;
-    const aiScene* scene = importer.ReadFile(path, aiProcess_CalcTangentSpace | aiProcess_Triangulate);
+    const aiScene* scene = importer.ReadFile(objectPath, aiProcess_CalcTangentSpace | aiProcess_Triangulate);
     
     if(!scene)
     {
         std::cout << "Error during object loading => " << importer.GetErrorString();
         return;
     }
+
+    
+    std::vector<Material> localMaterials;
+    for (unsigned int m=0; m<scene->mNumMaterials; ++m)
+	{
+		int texIndex = 0;
+		aiString filename;
+        
+		aiReturn texFound = scene->mMaterials[m]->GetTexture(aiTextureType_DIFFUSE, texIndex, &filename);
+        
+		while (texFound == AI_SUCCESS) {
+			//fill map with textures, OpenGL image ids set to 0
+			//textureIdMap[path.data] = 0;
+			// more textures?
+			texIndex++;
+			texFound = scene->mMaterials[m]->GetTexture(aiTextureType_DIFFUSE, texIndex, &filename);
+            
+            localMaterials.push_back(Material(this->shaderProgram, objectPath.substr(0, objectPath.find_last_of("/\\") + 1) + filename.C_Str()));
+		}
+	}
     
     
     for(int i=0; i<scene->mNumMeshes; i++) {
@@ -42,11 +62,13 @@ void MeshObject::loadObject(std::string path) {
         std::vector<glm::vec2> uvs;
         std::vector<glm::vec3> normals;
         
-        vertices.reserve(theMesh->mNumVertices);
+
+       vertices.reserve(theMesh->mNumVertices);
         for(int i =0; i<theMesh->mNumVertices; i++) {
             vertices.push_back(glm::vec3(theMesh->mVertices[i].x , theMesh->mVertices[i].y, theMesh->mVertices[i].z));
         }
         
+       
         if(theMesh->HasNormals()) {
             normals.reserve(theMesh->mNumVertices);
             for(int i=0; i<theMesh->mNumVertices; i++) {
@@ -57,10 +79,9 @@ void MeshObject::loadObject(std::string path) {
         
         uvs.reserve(theMesh->mNumVertices);
         for(int i =0; i<theMesh->mNumVertices; i++) {
-            if(theMesh->HasTextureCoords(i)) {
                 uvs.push_back(glm::vec2(theMesh->mTextureCoords[0][i].x, theMesh->mTextureCoords[0][i].y));
-            }
         }
+
         
         if(theMesh->HasFaces()) {
             indices.reserve(3*theMesh->mNumFaces);
@@ -71,7 +92,7 @@ void MeshObject::loadObject(std::string path) {
             }
         }
         
-        Mesh* singleMesh =  new Mesh(this->shaderProgram, vertices, indices,  uvs,  normals);
+        Mesh* singleMesh =  new Mesh(this->shaderProgram, vertices, indices,  uvs,  normals, &localMaterials.at(0));
         singleMesh->initBuffers();
         
         this->meshBuffer.push_back(singleMesh);

@@ -6,10 +6,14 @@
 //  Copyright (c) 2014 Ferid Sabanovic. All rights reserved.
 //
 
-
 #include "Mesh.h"
 
-Mesh::Mesh(ShaderProgram* shaderProgram, std::vector<glm::vec3> vertices, std::vector<GLushort> indices, std::vector<glm::vec2> uvs, std::vector<glm::vec3> normals) {
+Mesh::Mesh(ShaderProgram* shaderProgram,
+           std::vector<glm::vec3> vertices,
+           std::vector<GLushort> indices,
+           std::vector<glm::vec2> uvs,
+           std::vector<glm::vec3> normals,
+           Material* material) {
     
     this->vertices = vertices;
     this->indices = indices;
@@ -17,8 +21,9 @@ Mesh::Mesh(ShaderProgram* shaderProgram, std::vector<glm::vec3> vertices, std::v
     this->normals = normals;
     
     this->positionLocation = shaderProgram->getAttributeLocation("vertexPosition_modelspace");
-    this->uvLocation = shaderProgram->getAttributeLocation("uvPosition_modelspace");
     this->normalLocation = shaderProgram->getAttributeLocation("normalPosition_modelspace");
+    this->uvLocation = shaderProgram->getAttributeLocation("uvPosition");
+    
     
     glGenVertexArrays(1, &this->VAO);
     
@@ -26,7 +31,9 @@ Mesh::Mesh(ShaderProgram* shaderProgram, std::vector<glm::vec3> vertices, std::v
     glGenBuffers(1, &this->normalsVBO);
     glGenBuffers(1, &this->uvsVBO);
     glGenBuffers(1, &this->indicesIBO);
-
+    
+    this->material = material;
+    
 }
 
 Mesh::~Mesh() {
@@ -59,9 +66,17 @@ void Mesh::initBuffers() {
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, this->indicesIBO);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, this->indices.size() * sizeof(GLushort), &this->indices[0], GL_STATIC_DRAW);
     
+    glBindVertexArray(0);
+    glBindBuffer(GL_ARRAY_BUFFER,0);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER,0);
+    
 }
 
 void Mesh::draw() {
+    
+
+    glBindTexture(GL_TEXTURE_2D,this->material->getMaterialID());
+
     glBindVertexArray(this->VAO);
     glDrawElements(GL_TRIANGLES, (GLushort) this->indices.size(), GL_UNSIGNED_SHORT, 0);
     glBindVertexArray(0);

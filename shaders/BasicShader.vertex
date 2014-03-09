@@ -1,7 +1,7 @@
 #version 330 core
 
 in vec3 vertexPosition_modelspace;
-in vec3 uvPosition_modelspace;
+in vec2 uvPosition;
 in vec3 normalPosition_modelspace;
 
 
@@ -20,7 +20,7 @@ uniform mat4 M;
 
 
 void main(){
-    LightPosition_worldspace = vec3(4,4,5);
+    LightPosition_worldspace = vec3(4,4,12.7);
     
 	// Position of the vertex, in worldspace : M * position
 	Position_worldspace = (M * vec4(vertexPosition_modelspace,1)).xyz;
@@ -39,7 +39,8 @@ void main(){
 	Normal_cameraspace = ( V * M * vec4(normalPosition_modelspace, 0)).xyz;
     
 	// UV of the vertex. No special space for this one.
-	//UV = uvPosition_modelspace;
+	UV = uvPosition;
+    
     gl_Position =  MVP * M * vec4(vertexPosition_modelspace, 1);
 }
 

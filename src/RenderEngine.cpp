@@ -19,7 +19,7 @@ RenderEngine::RenderEngine(){
 	
     
 	// Camera matrix
-	this->View = glm::lookAt(glm::vec3(4,3,3),  // Camera is at (4,3,3), in World Space
+	this->View = glm::lookAt(glm::vec3(4,2,3),  // Camera is at (4,3,3), in World Space
                              glm::vec3(0,0,0),  // and looks at the origin
                              glm::vec3(0,1,0)); // Head is up (set to 0,-1,0 to look upside-down)
                              
@@ -32,7 +32,7 @@ RenderEngine::RenderEngine(){
     
     glEnable(GL_DEPTH_TEST);
     glDepthFunc(GL_LESS);
-    glEnable(GL_CULL_FACE);
+  //  glEnable(GL_CULL_FACE);
     
     //glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_COLOR);
     //glEnable(GL_BLEND);

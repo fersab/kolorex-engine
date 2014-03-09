@@ -26,6 +26,7 @@ public:
     void attachShader(Shader* shader);
     void attachUniform4fv(std::string key, GLfloat* value);
     void attachUniform3fv(std::string key, GLfloat* value);
+    void attachUniform1i(std::string key, GLint value);
     GLint getAttributeLocation(std::string key);
     GLuint getCurrentProgram();
 };

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E1D3C1218CBF97B00F75545 /* libIL.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EDD09CC18CBF5FE008E1BEB /* libIL.1.dylib */; };
+		4E1D3C1518CC12F100F75545 /* Material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E1D3C1318CC12F100F75545 /* Material.cpp */; };
 		4E4DEBDC18B4152D004DBB6D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4DEBDB18B4152D004DBB6D /* OpenGL.framework */; };
 		4E4DEBE018B41636004DBB6D /* libglfw.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4DEBDF18B41636004DBB6D /* libglfw.3.1.dylib */; };
 		4E7A5F9218B5828200154889 /* BasicShader.fragment in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A5F9018B5828200154889 /* BasicShader.fragment */; };
@@ -18,6 +20,7 @@
 		4ED2F9C618C531CE00746705 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2F9BC18C531CE00746705 /* Shader.cpp */; };
 		4ED2F9C718C531CE00746705 /* ShaderProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2F9BE18C531CE00746705 /* ShaderProgram.cpp */; };
 		4ED2F9C818C531CE00746705 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2F9C018C531CE00746705 /* Window.cpp */; };
+		4ED43BC618CBF4CE0052A39A /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4DEBDD18B41531004DBB6D /* GLUT.framework */; };
 		4EEE647118B99A280070847D /* libassimp.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EEE647018B99A280070847D /* libassimp.3.0.0.dylib */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +37,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4E1D3C0B18CBF83A00F75545 /* libSOIL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSOIL.a; path = "../../../develop/Simple OpenGL Image Library/lib/libSOIL.a"; sourceTree = "<group>"; };
+		4E1D3C0E18CBF8E600F75545 /* libILU.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libILU.1.dylib; path = ../../../../../opt/local/lib/libILU.1.dylib; sourceTree = "<group>"; };
+		4E1D3C0F18CBF8E600F75545 /* libILUT.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libILUT.1.dylib; path = ../../../../../opt/local/lib/libILUT.1.dylib; sourceTree = "<group>"; };
+		4E1D3C1318CC12F100F75545 /* Material.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Material.cpp; sourceTree = "<group>"; };
+		4E1D3C1418CC12F100F75545 /* Material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Material.h; sourceTree = "<group>"; };
 		4E4DEBCF18B41520004DBB6D /* kolorex-engine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "kolorex-engine"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E4DEBDB18B4152D004DBB6D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		4E4DEBDD18B41531004DBB6D /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
@@ -53,6 +61,7 @@
 		4ED2F9BF18C531CE00746705 /* ShaderProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShaderProgram.h; path = src/ShaderProgram.h; sourceTree = "<group>"; };
 		4ED2F9C018C531CE00746705 /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Window.cpp; path = src/Window.cpp; sourceTree = "<group>"; };
 		4ED2F9C118C531CE00746705 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Window.h; path = src/Window.h; sourceTree = "<group>"; };
+		4EDD09CC18CBF5FE008E1BEB /* libIL.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libIL.1.dylib; path = ../../../../../opt/local/lib/libIL.1.dylib; sourceTree = "<group>"; };
 		4EEE647018B99A280070847D /* libassimp.3.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.3.0.0.dylib; path = ../../../../../opt/local/lib/libassimp.3.0.0.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E1D3C1218CBF97B00F75545 /* libIL.1.dylib in Frameworks */,
+				4ED43BC618CBF4CE0052A39A /* GLUT.framework in Frameworks */,
 				4EEE647118B99A280070847D /* libassimp.3.0.0.dylib in Frameworks */,
 				4E4DEBE018B41636004DBB6D /* libglfw.3.1.dylib in Frameworks */,
 				4E4DEBDC18B4152D004DBB6D /* OpenGL.framework in Frameworks */,
@@ -73,6 +84,10 @@
 		4E4DEBC618B41520004DBB6D = {
 			isa = PBXGroup;
 			children = (
+				4E1D3C0E18CBF8E600F75545 /* libILU.1.dylib */,
+				4E1D3C0F18CBF8E600F75545 /* libILUT.1.dylib */,
+				4E1D3C0B18CBF83A00F75545 /* libSOIL.a */,
+				4EDD09CC18CBF5FE008E1BEB /* libIL.1.dylib */,
 				4ED2F9B418C531A900746705 /* src */,
 				4EEE647018B99A280070847D /* libassimp.3.0.0.dylib */,
 				4E7A5F8F18B5828200154889 /* shaders */,
@@ -116,6 +131,8 @@
 				4ED2F9BF18C531CE00746705 /* ShaderProgram.h */,
 				4ED2F9C018C531CE00746705 /* Window.cpp */,
 				4ED2F9C118C531CE00746705 /* Window.h */,
+				4E1D3C1318CC12F100F75545 /* Material.cpp */,
+				4E1D3C1418CC12F100F75545 /* Material.h */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -179,6 +196,7 @@
 				4E7A5F9318B5828200154889 /* BasicShader.vertex in Sources */,
 				4ED2F9C418C531CE00746705 /* MeshObject.cpp in Sources */,
 				4ED2F9C218C531CE00746705 /* main.cpp in Sources */,
+				4E1D3C1518CC12F100F75545 /* Material.cpp in Sources */,
 				4ED2F9C318C531CE00746705 /* Mesh.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +283,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/local/lib,
+					"/Users/feridsabanovic/develop/Simple\\ OpenGL\\ Image\\ Library/lib",
 				);
 				PRODUCT_NAME = "kolorex-engine";
 			};
@@ -281,6 +300,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/local/lib,
+					"/Users/feridsabanovic/develop/Simple\\ OpenGL\\ Image\\ Library/lib",
 				);
 				PRODUCT_NAME = "kolorex-engine";
 			};

@@ -28,6 +28,10 @@ void ShaderProgram::attachUniform3fv(std::string key, GLfloat *value) {
     glUniformMatrix3fv(glGetUniformLocation(this->getCurrentProgram(), key.c_str()), 1, GL_FALSE, value);
 }
 
+void ShaderProgram::attachUniform1i(std::string key, GLint value) {
+    glUniform1i(glGetUniformLocation(this->getCurrentProgram(), key.c_str()), value);
+}
+
 GLint ShaderProgram::getAttributeLocation(std::string key) {
     return glGetAttribLocation(this->getCurrentProgram(), key.c_str());
 };

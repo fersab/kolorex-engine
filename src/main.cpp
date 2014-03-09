@@ -21,10 +21,6 @@ int main(int argc, const char * argv[])
 {
     Window* window = new Window(800, 600, "kolorex engine");
     
-    
-    
-    RenderEngine* renderEngine = new RenderEngine();
-    
     Shader* vertexShader = new Shader("/Users/feridsabanovic/projects/private/kolorex-engine/shaders/BasicShader.vertex", GL_VERTEX_SHADER);
     Shader* fragmentShader = new Shader("/Users/feridsabanovic/projects/private/kolorex-engine/shaders/BasicShader.fragment", GL_FRAGMENT_SHADER);
     
@@ -33,12 +29,10 @@ int main(int argc, const char * argv[])
     shaderProgram->attachShader(fragmentShader);
     shaderProgram->linkProgram();
     
+    RenderEngine* renderEngine = new RenderEngine();
     
     MeshObject* meshObject = new MeshObject(shaderProgram);
-    
-    meshObject->loadObject("/Users/feridsabanovic/bun.3ds");
-    meshObject->loadObject("/Users/feridsabanovic/cube.obj");
-    
+    meshObject->loadObject("/Users/feridsabanovic/tex_cube.obj");
     renderEngine->addMeshObject(meshObject);
     
     
@@ -47,7 +41,7 @@ int main(int argc, const char * argv[])
         glViewport(0, 0, window->getFrameBufferSize().width, window->getFrameBufferSize().height);
         
         glm::mat4 ModelMatrix = glm::mat4(1.0);
-        ModelMatrix = glm::rotate(ModelMatrix, (float) glfwGetTime() * 47.0f, glm::vec3(0.0f, 1.0f, 0.0f));
+        ModelMatrix = glm::rotate(ModelMatrix, (float) -glfwGetTime() * 27.0f, glm::vec3(0.0f, 1.0f, 0.0f));
         
         shaderProgram->attachUniform4fv("MVP", &renderEngine->getMVP()[0][0]);
         shaderProgram->attachUniform4fv("M", &ModelMatrix[0][0]);

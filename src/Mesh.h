@@ -15,8 +15,9 @@
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
-#include "ShaderProgram.h"
 
+#include "ShaderProgram.h"
+#include "Material.h"
 
 class Mesh {
     
@@ -38,12 +39,15 @@ private:
     std::vector<glm::vec2> uvs;
     std::vector<glm::vec3> normals;
     
+    Material* material;
+    
 public:
     Mesh(ShaderProgram* shaderProgram,
          std::vector<glm::vec3> vertices,
          std::vector<GLushort> indices,
          std::vector<glm::vec2> uvs,
-         std::vector<glm::vec3> normals);
+         std::vector<glm::vec3> normals,
+         Material* material);
     
     std::vector<glm::vec3> getVertices();
     std::vector<GLushort> getIndices();
