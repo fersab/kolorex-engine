@@ -21,7 +21,7 @@ Current shaders:
 
 General TODO:
 
-  * Texture Mapping for all object loads
+  * Texture Mapping for all object loads (done, tested on obj and 3ds, no multitexture support until needed)
   * Deffered Rendering
   * Volumetric Scattering
   * Integrate BULLET for physics
