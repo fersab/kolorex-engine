@@ -49,26 +49,40 @@ void Mesh::initBuffers() {
     glBindVertexArray(this->VAO);
     
     glBindBuffer(GL_ARRAY_BUFFER, this->verticesVBO);
-    glBufferData(GL_ARRAY_BUFFER, this->vertices.size() * sizeof(glm::vec3), &this->vertices[0], GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER,
+                 this->vertices.size() * sizeof(glm::vec3),
+                 &this->vertices[0],
+                 GL_STATIC_DRAW);
     glEnableVertexAttribArray(this->positionLocation);
     glVertexAttribPointer(this->positionLocation, 3, GL_FLOAT, GL_FALSE, 0, 0);
     
+    
     glBindBuffer(GL_ARRAY_BUFFER, this->normalsVBO);
-    glBufferData(GL_ARRAY_BUFFER, this->normals.size() * sizeof(glm::vec3), &this->normals[0], GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER,
+                 this->normals.size() * sizeof(glm::vec3),
+                 &this->normals[0],
+                 GL_STATIC_DRAW);
     glEnableVertexAttribArray(this->normalLocation);
     glVertexAttribPointer(this->normalLocation, 3, GL_FLOAT, GL_FALSE, 0, 0);
     
+    
     glBindBuffer(GL_ARRAY_BUFFER, this->uvsVBO);
-    glBufferData(GL_ARRAY_BUFFER, this->uvs.size() * sizeof(glm::vec2), &this->uvs[0], GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER,
+                 this->uvs.size() * sizeof(glm::vec2),
+                 &this->uvs[0],
+                 GL_STATIC_DRAW);
     glEnableVertexAttribArray(this->uvLocation);
     glVertexAttribPointer(this->uvLocation, 2, GL_FLOAT, GL_FALSE, 0, 0);
     
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, this->indicesIBO);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, this->indices.size() * sizeof(GLushort), &this->indices[0], GL_STATIC_DRAW);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER,
+                 this->indices.size() * sizeof(GLushort),
+                 &this->indices[0],
+                 GL_STATIC_DRAW);
     
     glBindVertexArray(0);
-    glBindBuffer(GL_ARRAY_BUFFER,0);
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER,0);
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
     
 }
 

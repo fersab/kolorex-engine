@@ -37,7 +37,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4E1D3C0B18CBF83A00F75545 /* libSOIL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSOIL.a; path = "../../../develop/Simple OpenGL Image Library/lib/libSOIL.a"; sourceTree = "<group>"; };
 		4E1D3C0E18CBF8E600F75545 /* libILU.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libILU.1.dylib; path = ../../../../../opt/local/lib/libILU.1.dylib; sourceTree = "<group>"; };
 		4E1D3C0F18CBF8E600F75545 /* libILUT.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libILUT.1.dylib; path = ../../../../../opt/local/lib/libILUT.1.dylib; sourceTree = "<group>"; };
 		4E1D3C1318CC12F100F75545 /* Material.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Material.cpp; sourceTree = "<group>"; };
@@ -86,7 +85,6 @@
 			children = (
 				4E1D3C0E18CBF8E600F75545 /* libILU.1.dylib */,
 				4E1D3C0F18CBF8E600F75545 /* libILUT.1.dylib */,
-				4E1D3C0B18CBF83A00F75545 /* libSOIL.a */,
 				4EDD09CC18CBF5FE008E1BEB /* libIL.1.dylib */,
 				4ED2F9B418C531A900746705 /* src */,
 				4EEE647018B99A280070847D /* libassimp.3.0.0.dylib */,
